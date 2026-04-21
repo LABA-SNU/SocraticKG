@@ -11,12 +11,7 @@
 [Paper](#) · [Quick Start](#quick-start) · [Results](#results) · [Citation](#citation)
 
 <br>
-<table align="center" bgcolor="white">
-<tr><td>
-  <img src="assets/main_figure.png" width="100%" alt="SocraticKG framework overview"/>
-</td></tr>
-</table>
-
+<img src="assets/main_figure.png" width="100%" alt="SocraticKG framework overview"/>
 
 </div>
 
