@@ -15,8 +15,8 @@ from typing import Iterable, Mapping
 
 from tqdm import tqdm
 
-from llm_client import call_model, parse_llm_json
-from prompts import WHOLE_DOC_QA_PROMPT, EXTRACTION_PROMPT
+from .llm_client import call_model, parse_llm_json
+from .prompts import WHOLE_DOC_QA_PROMPT, EXTRACTION_PROMPT
 
 
 def _generate_qa_pairs(content: str, qa_out_path: Path) -> tuple[list[dict], int]:
