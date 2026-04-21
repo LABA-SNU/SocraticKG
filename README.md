@@ -89,11 +89,19 @@ pip install -r requirements.txt
 
 ### Environment
 
+The pipeline uses an OpenAI-compatible API client, so you can point it at
+any compatible endpoint — OpenAI, OpenRouter (for Claude / Gemini / Qwen),
+or a local vLLM / LiteLLM server.
+
 ```bash
-export OPENAI_API_KEY="..."
-export ANTHROPIC_API_KEY="..."
-export GOOGLE_API_KEY="..."
+cp .env.example .env
+# Edit .env with your credentials
 ```
+
+Required variables:
+- `OPENAI_API_KEY` — your API key
+- `OPENAI_BASE_URL` — endpoint URL (default: `https://api.openai.com/v1`)
+- `MODEL_NAME` — model identifier (e.g. `gpt-4o`, `anthropic/claude-sonnet-4`)
 
 ### Minimal Example
 
