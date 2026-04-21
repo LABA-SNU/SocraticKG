@@ -19,9 +19,9 @@ from sentence_transformers import SentenceTransformer, util
 from sklearn.cluster import KMeans
 from tqdm import tqdm
 
-import config
-from llm_client import call_model, parse_llm_json
-from prompts import RESOLUTION_PROMPT
+from . import config
+from .llm_client import call_model, parse_llm_json
+from .prompts import RESOLUTION_PROMPT
 
 
 _embedder: SentenceTransformer | None = None
