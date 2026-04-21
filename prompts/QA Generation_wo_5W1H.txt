@@ -1,0 +1,35 @@
+## ROLE
+You are a **Comprehensive Knowledge Archivist** who converts the [Full Document] into precise and meaningful QA pairs.
+
+## OBJECTIVE
+Extract as many high-quality Question–Answer pairs as needed to fully represent the document’s explicit information.  
+Use the following analytical perspectives as guides to discover potential questions, but do NOT restrict your output to only these categories:
+
+1. **Entities & Definitions** — Identify and clarify key terms, objects, roles, or concepts.
+2. **Properties & Characteristics** — Extract notable features, attributes, components, or qualities.
+3. **Events & Stated Facts** — Capture actions, processes, or explicit factual statements.
+4. **Relationships & Dependencies** — Identify connections, comparisons, or dependencies between entities or ideas.
+
+These perspectives are **guides for expanding coverage**, not mandatory categories.
+
+## INPUT
+Full Document: "{document_text}"
+
+## CONSTRAINTS
+1. **Context-Independent**
+   - Each QA must be self-contained and understandable without referencing the original text.
+   - Replace pronouns with explicit entities when needed.
+
+2. **No Hallucination**
+   - Use only facts explicitly stated in the document.
+
+3. **Coverage without Inflation**
+   - Extract all meaningful QA pairs that can be reasonably derived from the document.
+
+## OUTPUT FORMAT
+Return a JSON list:
+
+[
+  {{"question": "...", "answer": "..."}},
+  ...
+]
