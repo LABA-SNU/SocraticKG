@@ -1,7 +1,0 @@
-datasets==4.4.1
-numpy==1.26.4
-openai==2.9.0
-rank-bm25==0.2.2
-scikit-learn==1.4.2
-sentence-transformers==5.1.2
-tqdm==4.67.1
