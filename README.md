@@ -137,12 +137,11 @@ SocraticKG/
 ## Citation
 
 ```bibtex
-@inproceedings{choi2026socratickg,
-  title     = {SocraticKG: Knowledge Graph Construction via QA-Driven Fact Extraction},
-  author    = {Choi, Sanghyeok and Jeon, Woosang and Yang, Kyuseok and Kim, Taehyeong},
-  booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
-  year      = {2026},
-  publisher = {Association for Computational Linguistics}
+@article{choi2026socratickg,
+  title={SocraticKG: Knowledge Graph Construction via QA-Driven Fact Extraction},
+  author={Choi, Sanghyeok and Jeon, Woosang and Yang, Kyuseok and Kim, Taehyeong},
+  journal={arXiv preprint arXiv:2601.10003},
+  year={2026}
 }
 ```
 
