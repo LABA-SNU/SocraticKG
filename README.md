@@ -11,14 +11,11 @@
 [Paper](#) · [Quick Start](#quick-start) · [Results](#results) · [Citation](#citation)
 
 <br>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/main_figure_dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="assets/main_figure.png">
-  <img src="assets/main_figure.png" width="85%" alt="SocraticKG framework overview"/>
-</picture>
-
-<img src="assets/main_figure.png" width="85%" alt="SocraticKG framework overview"/>
+<table align="center" bgcolor="white">
+<tr><td>
+  <img src="assets/main_figure.png" width="100%" alt="SocraticKG framework overview"/>
+</td></tr>
+</table>
 
 
 </div>
