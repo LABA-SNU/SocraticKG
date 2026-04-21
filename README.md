@@ -29,13 +29,13 @@ This interrogative scaffold systematically surfaces implicit causal and procedur
 
 The pipeline consists of three stages:
 
-**1. 5W1H-Guided QA Generation**
+**1. 5W1H-Guided QA Generation** <br>
 The document is decomposed into self-contained, context-independent QA pairs. The 5W1H framework serves as an analytical lens that surfaces procedural and causal content alongside surface-level facts. All referential expressions (pronouns, definite descriptions) are resolved so that each QA pair stands alone as an extraction unit.
 
-**2. Triple Extraction from QA**
+**2. Triple Extraction from QA** <br>
 Each QA pair is independently mapped to atomic `(entity₁, relation, entity₂)` triples. Operating on logically self-contained units narrows the semantic boundary of each extraction step and reduces errors typical of single-pass pipelines.
 
-**3. Canonicalization**
+**3. Canonicalization** <br>
 Extracted triples are unified through an embedding-based cluster-then-refine procedure combining K-means clustering, hybrid dense-sparse retrieval (BM25 + cosine), and LLM-based synonym resolution — producing a compact, coherent graph with consolidated entities and relations.
 
 ---
