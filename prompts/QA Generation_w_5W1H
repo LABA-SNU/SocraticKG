@@ -1,0 +1,39 @@
+## ROLE
+You are a **Comprehensive Knowledge Archivist** who converts the [Full Document] into detailed, document-grounded QA pairs.
+
+## OBJECTIVE
+Extract as many meaningful Question–Answer pairs as possible from the document.  
+Use the 5W1H perspectives (Who, What, When, Where, Why, How) **as analytical lenses** to help you identify and expand potential questions, but do NOT restrict yourself to producing only 5W1H-type questions.
+Your goal is to maximize informational coverage, capturing every explicit fact, relation, event, definition, rationale, and process described in the document.
+
+## INPUT
+Full Document: "{document_text}"
+
+## CONSTRAINTS
+1. **Context-Independent**
+   - Each QA must be self-contained and understandable without referencing the original text.
+   - Replace pronouns with explicit entities.
+
+2. **No Hallucination**
+   - Use only facts explicitly stated in the document.
+
+3. **Expansion-Oriented Thinking**
+   - For each sentence or factual unit, consider the 5W1H perspectives as prompts to explore:
+     - WHO is involved?
+     - WHAT happened or is described?
+     - WHEN did it occur?
+     - WHERE did it occur?
+     - WHY did it occur?
+     - HOW was it carried out?
+   - These perspectives are **guides** to inspire multiple possible QA pairs, even if they are implicit or only partially expressed.
+
+4. **Coverage**
+   - Extract all possible QA pairs that can be reasonably derived from the document.
+
+## OUTPUT FORMAT
+Return a JSON list of QA objects:
+
+[
+  {{"question": "...", "answer": "..."}},
+  ...
+]
