@@ -67,6 +67,19 @@ SocraticKG is the only KG-based method that **consistently outperforms Naive RAG
 
 ---
 
+## Evaluation
+
+All evaluation scripts — factual retention scoring on MINE and the 
+downstream HotpotQA protocol — are used **as-is** from the official 
+[KGGen repository](https://github.com/stair-lab/kg-gen), with no 
+modifications. This ensures that every method reported in the Results 
+tables is scored under an identical protocol.
+
+We thank the KGGen authors ([Mo et al., 2025](https://arxiv.org/abs/2502.09956)) 
+for open-sourcing their evaluation framework.
+
+---
+
 ## Quick Start
 ```# Set up credentials
 cp .env.example .env
