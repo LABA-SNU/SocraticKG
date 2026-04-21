@@ -15,9 +15,9 @@ from pathlib import Path
 
 from datasets import load_dataset
 
-import config
-from extraction import run_extraction
-from canonicalization import run_canonicalization
+from . import config
+from .extraction import run_extraction
+from .canonicalization import run_canonicalization
 
 
 def parse_args() -> argparse.Namespace:
