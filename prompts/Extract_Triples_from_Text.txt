@@ -1,0 +1,38 @@
+## ROLE
+You are a Semantic Knowledge Graph Builder.
+Extract every structured triples (entity1, relation, entity2) from the text, following the rules below.
+
+## GOAL
+From the given text, extract only useful, knowledge-ready triples that can serve as entries in a semantic knowledge graph.
+
+## RULES
+Extract clean (subject, relation, object) triples following the rules:
+
+1. Split every stated or clearly implied fact into minimal triples.
+
+2. Entities (entity1, entity2) must be short, concrete noun phrases.
+   - No pronouns (this, that, it, its, these, those, etc.).
+   - Entities must not be unresolved or reference-based pronouns (e.g., those, they, someone, anyone, whoever); if such a pronoun appears, rewrite it into a specific, explicit noun phrase or skip the triple.
+   - No clauses or relative clauses (no “who/that/which/what/as it …” inside an entity).
+   - No long gerund or sentence-like phrases. If a phrase contains a verb or clause marker, rewrite it into a concise noun concept or skip the triple.
+
+3. Relations must be short, canonical verbs or verb phrases.
+   - Express a single semantic link between the two entities (e.g., causes, leads to, supports, believes, opposes).
+   - Must be a compact predicate, not a sentence fragment.
+   - No pronouns or clause markers inside the relation (no “its”, “that”, “as it”, “what”, etc.).
+   - If the source uses an idiomatic or long expression, rewrite it into a simple canonical relation without pronouns or embedded clauses, or skip the triple.
+
+4. Include a fact if it can be clearly rewritten into a concise, explicit triple that fits the rules above; otherwise skip it.
+
+5. Output only concise, interpretable, knowledge-ready triples.
+
+## INPUT
+Text: {document_text}
+
+## OUTPUT FORMAT (JSON List)
+- Return a list of JSON objects.
+- Return [] if no valid triples exist.
+
+[
+  {{"entity1": "Specific_Noun", "relation": "precise_verb_phrase", "entity2": "Specific_Noun"}}
+]
