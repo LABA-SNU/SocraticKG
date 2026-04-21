@@ -1,16 +1,14 @@
 <div align="center">
 
-# SocraticKG
+<img src="assets/banner.svg" width="100%" alt="SocraticKG — Knowledge Graph Construction via QA-Driven Fact Extraction"/>
 
-**Knowledge Graph Construction via QA-Driven Fact Extraction**
+<br><br>
 
 [![ACL Findings 2026](https://img.shields.io/badge/ACL%20Findings-2026-b31b1b.svg)](https://2026.aclweb.org/)
 [![Paper](https://img.shields.io/badge/paper-PDF-b31b1b.svg)](#)
 [![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg)](#)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
-
-*Ask the right questions. Build the right graph.*
 
 [Paper](#) · [Quick Start](#quick-start) · [Results](#results) · [Citation](#citation)
 
@@ -154,6 +152,5 @@ This work was supported by the Technology Innovation Program (MOTIE, Korea, RS-2
 ---
 
 <div align="center">
-LABA @ Seoul National University</sub>
-
+<sub>LABA @ Seoul National University</sub>
 </div>
