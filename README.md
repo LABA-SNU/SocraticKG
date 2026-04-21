@@ -165,8 +165,7 @@ SocraticKG/
 │   └── Extract_Triples_from_Text.txt
 ├── assets/
 │   ├── banner.svg
-│   ├── main_figure_light.png
-│   └── main_figure_dark.png
+│   └── main_figure.png
 ├── requirements.txt
 ├── .env.example
 ├── LICENSE
