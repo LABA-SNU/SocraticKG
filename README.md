@@ -67,6 +67,17 @@ SocraticKG is the only KG-based method that **consistently outperforms Naive RAG
 ---
 
 ## Quick Start
+```# Set up credentials
+cp .env.example .env
+# → edit .env with your API key
+
+# Run the full pipeline
+python -m socratickg.run --dataset kyssen/kg-gen-evaluation-essays
+
+# Or step-by-step
+python -m socratickg.run --steps extract
+python -m socratickg.run --steps canonicalize
+```
 
 ### Installation
 
@@ -87,11 +98,18 @@ export GOOGLE_API_KEY="..."
 ### Minimal Example
 
 ```python
-from socratickg import SocraticKG
+# Programmatic usage (after pip installing dependencies)
+from pathlib import Path
+from socratickg.extraction import run_extraction
+from socratickg.canonicalization import run_canonicalization
+from socratickg.config import build_output_dirs
+from datasets import load_dataset
 
-kg = SocraticKG(model="gpt-4o")
-graph = kg.build(document="Your unstructured text here ...")
-graph.save("my_kg.json")
+dirs = build_output_dirs(Path("outputs/my_run"))
+dataset = load_dataset("your/dataset")["train"]
+
+run_extraction(dataset, dirs["qa"], dirs["raw_triples"], dirs["usage"])
+run_canonicalization(dirs["raw_triples"], dirs["final_triples"])
 ```
 
 ### Reproducing Paper Results
@@ -111,18 +129,26 @@ python scripts/run_hotpotqa.py --model claude-4 --hop 3
 ```
 SocraticKG/
 ├── socratickg/
-│   ├── qa_generation.py        # 5W1H-guided QA generation
-│   ├── triple_extraction.py    # QA → triple extraction
-│   ├── canonicalization.py     # Entity & relation unification
-│   └── graph.py                # KG data structure
+│   ├── __init__.py
+│   ├── config.py               # Env-based configuration
+│   ├── llm_client.py           # OpenAI client + JSON parser
+│   ├── prompts.py              # Prompt templates
+│   ├── extraction.py           # Step 1: 5W1H QA + triple extraction
+│   ├── canonicalization.py     # Step 2: entity & relation unification
+│   └── run.py                  # CLI entry point
 ├── prompts/
-│   ├── qa_5w1h.txt             # RO / PS / ID prompt archetypes
-│   └── triple_extraction.txt
-├── scripts/
-│   ├── run_mine.py
-│   └── run_hotpotqa.py
-├── data/                       # MINE + HotpotQA samples
-└── assets/
+│   ├── QA Generation_w_5W1H.txt
+│   ├── QA Generation_wo_5W1H.txt
+│   ├── Extract_Triples_from_QA.txt
+│   └── Extract_Triples_from_Text.txt
+├── assets/
+│   ├── banner.svg
+│   ├── main_figure_light.png
+│   └── main_figure_dark.png
+├── requirements.txt
+├── .env.example
+├── LICENSE
+└── README.md
 ```
 
 ---
