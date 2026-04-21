@@ -18,7 +18,8 @@
   <img src="assets/main_figure.png" width="85%" alt="SocraticKG framework overview"/>
 </picture>
 
-<sub>Unstructured text → 5W1H-guided QA pairs → atomic triples → canonicalized knowledge graph</sub>
+<img src="assets/main_figure.png" width="85%" alt="SocraticKG framework overview"/>
+
 
 </div>
 
