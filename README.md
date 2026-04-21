@@ -155,13 +155,6 @@ This work was supported by the Technology Innovation Program (MOTIE, Korea, RS-2
 ---
 
 <div align="center">
-
-**Sanghyeok Choi**\* · **Woosang Jeon**\* · **Kyuseok Yang** · **Taehyeong Kim**†
-
-Department of Biosystems Engineering, Seoul National University
-
-`{cholsang83, jwoosang1, kyuseok0603, taehyeong.kim}@snu.ac.kr`
-
-<sub>\*Equal contribution &nbsp;·&nbsp; †Corresponding author &nbsp;·&nbsp; LABA @ Seoul National University</sub>
+LABA @ Seoul National University</sub>
 
 </div>
