@@ -7,7 +7,7 @@ from typing import Tuple, Any
 
 from openai import OpenAI
 
-import config
+from . import config
 
 
 _client: OpenAI | None = None
