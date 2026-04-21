@@ -1,0 +1,14 @@
+<svg width="100%" viewBox="0 0 680 120" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>SocraticKG</title>
+  <desc>Header banner for SocraticKG: Knowledge Graph Construction via QA-Driven Fact Extraction</desc>
+
+  <rect x="0" y="0" width="680" height="120" rx="12" fill="#0d1117"/>
+
+  <rect x="0" y="0" width="227" height="4" rx="0" fill="#4f8ef7"/>
+  <rect x="227" y="0" width="226" height="4" rx="0" fill="#7c6cf7"/>
+  <rect x="453" y="0" width="227" height="4" rx="0" fill="#a855f7"/>
+
+  <text x="340" y="66" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="40" font-weight="700" letter-spacing="-1" fill="#f0f6fc">SocraticKG</text>
+  <text x="340" y="94" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="400" fill="#8b949e" letter-spacing="0.3">Knowledge Graph Construction via QA-Driven Fact Extraction</text>
+
+</svg>
