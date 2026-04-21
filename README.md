@@ -174,12 +174,6 @@ SocraticKG/
 
 ---
 
-## Acknowledgements
-
-This work was supported by the Technology Innovation Program (MOTIE, Korea, RS-2025-25453780); the National Research Foundation of Korea (RS-2023-00302123) as part of the European Commission's Horizon Europe programme (Grant No. 101135576, INTEND); the IITP grant funded by the Korean government (MSIT) [RS-2021-II211343, AI Graduate School Program (Seoul National University)]; and the Creative-Pioneering Researchers Program through Seoul National University.
-
----
-
 <div align="center">
 <sub>LABA @ Seoul National University</sub>
 </div>
