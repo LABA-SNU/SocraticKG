@@ -3,8 +3,7 @@
 <img src="assets/banner.svg" width="100%" alt="SocraticKG — Knowledge Graph Construction via QA-Driven Fact Extraction"/>
 
 [![ACL Findings 2026](https://img.shields.io/badge/ACL%20Findings-2026-b31b1b.svg)](https://2026.aclweb.org/)
-[![Paper](https://img.shields.io/badge/paper-PDF-b31b1b.svg)](assets/paper.pdf)
-[Paper](assets/paper.pdf)
+[![Paper](https://img.shields.io/badge/paper-PDF-b31b1b.svg)](https://arxiv.org/pdf/2601.10003.pdf)
 [![arXiv](https://img.shields.io/badge/arXiv-2601.10003-b31b1b.svg)](https://arxiv.org/abs/2601.10003)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
